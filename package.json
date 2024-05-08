@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "husky": "^9.0.11"
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "./commands/pre-commit",
+        "pre-push": "./commands/pre-push $HUSKY_GIT_STDIN"
+    }
+  }
+}
