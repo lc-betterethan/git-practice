@@ -14,5 +14,5 @@ start({
 })
 
 start({
-    message: "It's just a test"
+    message: "It's just a test, have fun",
 })
