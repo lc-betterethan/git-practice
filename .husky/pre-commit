@@ -1,5 +1,13 @@
 #!/bin/bash
 
+npm run lint-staged || { echo "Linting failed. Please fix lint errors before committing."; exit 1; }
+
+# Check if lint-staged succeeded
+if [ $? -ne 0 ]; then
+  echo "Linting failed. Please fix lint errors before committing."
+  exit 1
+fi
+
 # Protect master from accidental commits.
 echo "Checking branch name"
 branchName=$(git rev-parse --abbrev-ref HEAD)

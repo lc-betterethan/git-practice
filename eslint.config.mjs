@@ -13,9 +13,9 @@ export default [
 
     {
         rules: {
-            "no-unused-vars": "warn",
-            "no-undef": "warn",
-            "object-curly-spacing": "warn"
+            "no-unused-vars": "error",
+            "no-undef": "error",
+            "object-curly-spacing": "error"
         }
     }
 ];

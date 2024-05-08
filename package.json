@@ -12,10 +12,11 @@
     "typescript-eslint": "^7.8.0"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.{js,ts,jsx,tsx,ejs}": "eslint"
   },
   "dependencies": {
     "lodash": "^4.17.21"
