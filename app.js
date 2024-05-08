@@ -12,3 +12,7 @@ function start({message}) {
 start({
     message: "It's just a demo"
 })
+
+start({
+    message: "It's just a test"
+})
